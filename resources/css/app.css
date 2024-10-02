@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 350px; /* Adjust the width as needed */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #2d3748; /* Dark background color for the sidebar */
+    position: fixed; /* Keeps the sidebar in place */
+    z-index: 1000; /* Ensure it is above other elements */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+/* Sidebar header styles */
+.sidebar h2 {
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Navigation link styles */
+.nav-link {
+    display: block;
+    color: #a0aec0; /* Light gray text color */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    background-color: #4a5568; /* Darker gray on hover */
+    color: white; /* White text on hover */
+}
+
+/* Content area adjustment */
+.flex-grow {
+    margin-left: 300px; /* Match this with the sidebar width */
+    padding: 20px; /* Padding for content */
+}
+
+/* Body background color */
+body {
+    background-color: #edf2f7; /* Light background color */
+}
